@@ -88,53 +88,62 @@ This cheatsheet covers the most commonly used Docker commands. For more detailed
 - **Minimize Layers in Dockerfile**: Consolidate instructions in your Dockerfile to reduce the number of layers.
 - **Tag Images Consistently**: Use a consistent naming and tagging convention for your Docker images.
 
-## Common Docker Interview Questions
+## Common Docker Interview Questions and Answers
 
 1.) Difference between Docker containers and Virtual Machines
 <details>
 <summary>Answer</summary>
 Containers are lightweight, run on the host's operating system, and share the host's kernel. Virtual Machines (VMs) are full-blown operating systems that run on top of a hypervisor.
 </details>
-2.) Dockerfiles and building Docker images
+
+2.) Dockerfiles and building Docker images  
 <details>
 <summary>Answer</summary>
 A Dockerfile is a text file that contains instructions for building a Docker image. You use the `docker build` command to build an image from a Dockerfile.
 </details>
+
 3.) Managing data persistence with Docker volumes
 <details>
 <summary>Answer</summary>
 Volumes are the preferred way to persist data in Docker. They allow you to decouple data from the container lifecycle and store it on the host file system.
 </details>
+
 4.) The Docker networking model and network types
 <details>
 <summary>Answer</summary>
 Docker provides several network drivers, including bridge, host, overlay, and macvlan. These allow containers to communicate with each other and the outside world.
 </details>
+
 5.) Purpose and usage of Docker Compose
 <details>
 <summary>Answer</summary>
 Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to specify the services, networks, and volumes in a YAML file, making it easier to deploy complex applications.
 </details>
+
 6.) Best practices for building Docker images
 <details>
 <summary>Answer</summary>
 Best practices include using minimal base images, implementing multi-stage builds, managing secrets securely, and avoiding installing unnecessary packages.
 </details>
+
 7.) Handling environment-specific configurations
 <details>
 <summary>Answer</summary>
 You can use environment variables to store configuration settings and make your containers more portable across different environments.
 </details>
+
 8.) Deploying a Docker-based application to production
 <details>
 <summary>Answer</summary>
 The process typically involves building Docker images, pushing them to a registry, and then using orchestration tools like Kubernetes or Docker Swarm to deploy the application to production.
 </details>
+
 9.) Docker registries and image distribution
 <details>
 <summary>Answer</summary>
 A Docker registry is a centralized store for Docker images. The most popular is Docker Hub, which allows you to host and distribute your own Docker images.
 </details>
+
 10.) Debugging and troubleshooting Docker containers
 <details>
 <summary>Answer</summary>
